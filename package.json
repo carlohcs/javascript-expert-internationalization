@@ -1,0 +1,38 @@
+{
+  "name": "javascript-expert-internationalization",
+  "version": "1.0.0",
+  "description": "Project to data internationalization",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx nodemon --ignore database.json --exec node --experimental-json-modules src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlohcs/javascript-expert-internationalization.git"
+  },
+  "keywords": [
+    "javascript",
+    "internationalization",
+    "javascript",
+    "expert"
+  ],
+  "author": "Carlos Henrique Carvalho de Santana <carlohcs@gmail.com>",
+  "license": "ISC",
+  "engines": {
+    "node": "14.3"
+  },
+  "bugs": {
+    "url": "https://github.com/carlohcs/javascript-expert-internationalization/issues"
+  },
+  "homepage": "https://github.com/carlohcs/javascript-expert-internationalization#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "chalk-table": "^1.0.2",
+    "draftlog": "^1.0.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
