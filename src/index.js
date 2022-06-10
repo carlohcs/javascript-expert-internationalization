@@ -3,7 +3,7 @@ import database from "./database.json"
 import Person from "./person.js"
 import TerminalController from "./terminalController.js"
 
-const DEFAULT_LANG = "pt-br"
+const DEFAULT_LANG = "pt-BR"
 const STOP_TERMINAL = ":q"
 
 const terminalControlller = new TerminalController()
@@ -15,12 +15,13 @@ async function mainLoop() {
 
     if (answer === STOP_TERMINAL) {
       terminalControlller.closeTerminal()
+      console.log('process finished!')
 
       return
     }
 
     const person = Person.generateInstanceFromString(answer)
-    console.log(person.formatted(DEFAULT_LANG))
+    terminalControlller.updateTable(person.formatted(DEFAULT_LANG))
 
     return mainLoop()
   } catch (error) {
